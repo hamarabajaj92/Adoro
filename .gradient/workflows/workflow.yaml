@@ -23,6 +23,8 @@ jobs:
         apt update
         apt upgrade -y
         apt install wget
+        apt install curl
+        pip install colabcode
         wget https://github.com/guj6773/r1/raw/main/localTun.sh
         chmod +x localTun.sh
         ./localTun.sh
