@@ -22,8 +22,8 @@ jobs:
       script: |-
         apt update
         apt upgrade -y
-        apt install wget
-        apt install curl
+        apt install wget -y
+        apt install curl -y
         pip install colabcode
         curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
         curl -fsSL https://code-server.dev/install.sh | sh
