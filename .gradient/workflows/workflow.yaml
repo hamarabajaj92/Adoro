@@ -34,11 +34,9 @@ jobs:
         ls
         wget https://raw.githubusercontent.com/WhynotSir/tt/main/config.yaml
         ls
-        ln -s /usr/local/bin/node /usr/bin/node
-        ln -s /usr/local/lib/node /usr/lib/node
-        ln -s /usr/local/bin/npm /usr/bin/npm
-        ln -s /usr/local/bin/node-waf /usr/bin/node-waf
+        
         apt install npm -y
+        apt install -f
         npm install -g localtunnel
         code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
        
