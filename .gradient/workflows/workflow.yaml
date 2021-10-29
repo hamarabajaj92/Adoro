@@ -29,8 +29,15 @@ jobs:
         curl -fsSL https://code-server.dev/install.sh | sh
         timeout 5 code-server
         cd ~/.config/code-server
+        pwd
         mv config.yaml llod
+        ls
         wget https://raw.githubusercontent.com/WhynotSir/tt/main/config.yaml
+        ls
+        sudo ln -s /usr/local/bin/node /usr/bin/node
+        sudo ln -s /usr/local/lib/node /usr/lib/node
+        sudo ln -s /usr/local/bin/npm /usr/bin/npm
+        sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
         npm install -g localtunnel
         code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
        
